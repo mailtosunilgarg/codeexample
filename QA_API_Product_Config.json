@@ -18,7 +18,7 @@
        {
         "product":"offers",
         "staging_public_baseurl":"https://offers-3scale-apicast-staging.qa.apps.api.abgapiservices.com:443",
-        "production_public_baseurl":"https://offers-3scale-apicast-production.apps.qa.api.abgapiservices.com:443",
+        "production_public_baseurl":"https://offers-3scale-apicast-production.qa.apps.api.abgapiservices.com:443",
         "zyncsso_url":"https://zync-sso:20faceb7-a036-41c2-b32a-2eb97931730e@sso-sso.apps.api.abgapiservices.com/auth/realms/3scale-dev-api-oidc"
         }
       ],
