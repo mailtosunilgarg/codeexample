@@ -1,13 +1,12 @@
-[{
-		"QA": {
-			"source_url": "https://eca716de14ec2de174ffcbb8709b4b2dafa62b92701ce302a64c1d84020e6714@3scale-admin.apps.api.abgapiservices.com/",
-			"destination_url": "https://8219716b1229fb18f2db842a721fc2a344de94fd068d68e7d751388824b57861@3scale-admin.qa.apps.api.abgapiservices.com/"
-		}
-	},
-	{
-		"Stage": {
-			"source_url": "https://eca716de14ec2de174ffcbb8709b4b2dafa62b92701ce302a64c1d84020e6714@3scale-admin.apps.api.abgapiservices.com/",
-			"destination_url": "https://8219716b1229fb18f2db842a721fc2a344de94fd068d68e7d751388824b57861@3scale-admin.qa.apps.api.abgapiservices.com/"
-		}
-	}
-]
+{
+  "QA":
+    {
+      "source_url": "https://eca716de14ec2de174ffcbb8709b4b2dafa62b92701ce302a64c1d84020e6714@3scale-admin.apps.api.abgapiservices.com/",
+      "destination_url": "https://8219716b1229fb18f2db842a721fc2a344de94fd068d68e7d751388824b57861@3scale-admin.qa.apps.api.abgapiservices.com/"  
+    },
+  "Stage":
+    {
+      "source_url": "https://eca716de14ec2de174ffcbb8709b4b2dafa62b92701ce302a64c1d84020e6714@3scale-admin.apps.api.abgapiservices.com/",
+      "destination_url": "https://8219716b1229fb18f2db842a721fc2a344de94fd068d68e7d751388824b57861@3scale-admin.qa.apps.api.abgapiservices.com/"  
+    }
+}
