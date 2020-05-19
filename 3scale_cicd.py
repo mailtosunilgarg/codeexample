@@ -25,6 +25,9 @@ def getBackendId(backends, backend_system_name):
 product_config_file = sys.argv[1]
 env_config_file = sys.argv[2]
 
+print 'product_config_file =>' + product_config_file
+print 'env_config_file =>' + env_config_file
+
 product_config=json.loads(readFile(product_config_file))
 env_config=json.loads(readFile(env_config_file))
 source_admin_url = env_config["QA"]["source_url"]
