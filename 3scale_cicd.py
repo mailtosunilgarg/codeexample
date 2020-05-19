@@ -22,24 +22,14 @@ def getBackendId(backends, backend_system_name):
 			break
 	return backend_id
 
-product_config_file = sys.argv[1]
-env_config_file = sys.argv[2]
-envToPromote1 = sys.argv[3]
-envToPromote2 = sys.argv[4]
-print 'product_config_file =>' + product_config_file
-print 'env_config_file =>' + env_config_file
+filename = sys.argv[1]
+env_to_promote = sys.argv[2]
+env_config_file = sys.argv[3]
 
-product_config=json.loads(readFile(product_config_file))
-env_config=json.loads(readFile(env_config_file))
+env_config = json.loads(readFile(env_config_file))
+
 source_admin_url = env_config["QA"]["source_url"]
 destination_admin_url = env_config["QA"]["destination_url"]
-
-print 'env_to_promote1 =>' + envToPromote1
-print 'env_to_promote2 =>' + envToPromote2
-print 'source_admin_url =>' + source_admin_url
-print 'destination_admin_url =>' + destination_admin_url
-
-envToPromote = "QA"
 
 admin_url_regex = re.compile(r'https://(\w+)@(.*)$')
 admin_accesstoken = admin_url_regex.search(destination_admin_url).group(1)
