@@ -38,6 +38,7 @@ print 'env_to_promote2 =>' + params.envToPromote
 print 'source_admin_url =>' + source_admin_url
 print 'destination_admin_url =>' + destination_admin_url
 
+envToPromote = "QA"
 
 admin_url_regex = re.compile(r'https://(\w+)@(.*)$')
 admin_accesstoken = admin_url_regex.search(destination_admin_url).group(1)
