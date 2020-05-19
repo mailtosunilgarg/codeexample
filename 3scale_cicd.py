@@ -27,8 +27,8 @@ env_config=json.loads(readFile(sys.argv[2]))
 source_admin_url = env_config["QA"]["source_url"]
 destination_admin_url = env_config["QA"]["destination_url"]
 
-print 'env_to_promote1 =>' + ${envToPromote}
-print 'env_to_promote2 =>' + ${params}
+print 'env_to_promote1 =>' + envToPromote
+print 'env_to_promote2 =>' + params.envToPromote
 print 'source_admin_url =>' + source_admin_url
 print 'destination_admin_url =>' + destination_admin_url
 
