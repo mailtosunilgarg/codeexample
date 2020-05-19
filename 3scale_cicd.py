@@ -24,7 +24,8 @@ def getBackendId(backends, backend_system_name):
 
 product_config_file = sys.argv[1]
 env_config_file = sys.argv[2]
-
+envToPromote1 = sys.argv[3]
+envToPromote2 = sys.argv[4]
 print 'product_config_file =>' + product_config_file
 print 'env_config_file =>' + env_config_file
 
@@ -33,8 +34,8 @@ env_config=json.loads(readFile(env_config_file))
 source_admin_url = env_config["QA"]["source_url"]
 destination_admin_url = env_config["QA"]["destination_url"]
 
-print 'env_to_promote1 =>' + envToPromote
-print 'env_to_promote2 =>' + params.envToPromote
+print 'env_to_promote1 =>' + envToPromote1
+print 'env_to_promote2 =>' + envToPromote2
 print 'source_admin_url =>' + source_admin_url
 print 'destination_admin_url =>' + destination_admin_url
 
