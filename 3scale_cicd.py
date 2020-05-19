@@ -28,8 +28,8 @@ env_config_file = sys.argv[3]
 
 env_config = json.loads(readFile(env_config_file))
 
-source_admin_url = env_config["QA"]["source_url"]
-destination_admin_url = env_config["QA"]["destination_url"]
+source_admin_url = env_config[env_to_promote]["source_url"]
+destination_admin_url = env_config[env_to_promote]["destination_url"]
 
 admin_url_regex = re.compile(r'https://(\w+)@(.*)$')
 admin_accesstoken = admin_url_regex.search(destination_admin_url).group(1)
